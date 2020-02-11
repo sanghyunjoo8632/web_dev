@@ -6,6 +6,119 @@
     <title>이미지, 리스트, 테이블</title>
 </head>
 <body>
-    
+    <!-- 다른 파일과 연결하고 싶을 때 경로(주소)를 입력하여 연결 -->
+    <!-- 상대경로 : (./)폴더 또는 파일명을 입력하면 됩니다. -->
+    <img src="./img/car.jpg" alt="">
+    <!-- 상위 폴더에 있는 이미지 찾기 -->
+    <img src="../test.jpg" alt="">
+    <!-- 절대경로 : 파일의 하드디스크 또는 서버 상의 위치를 표시 -->
+    <img src="c:/web_dev/test.jpg" alt="">
+    <img src="https://cdn.pixabay.com/photo/2016/03/15/04/11/towards-the-garden-1256872__340.jpg" alt="">
+    <!-- 루트경로 -->
+    <img src="/test.jpg" alt="">
+    <!-- alt : 이미지에 대한 대체 설명 -->
+    <hr>
+    <img src="아무거나" alt="대신나타나는텍스트(대체로 설명하는 텍스트)">
+    <!-- width(가로), height(세로) -->
+    <hr>
+    <img src="https://cdn.pixabay.com/photo/2016/03/15/04/11/towards-the-garden-1256872__340.jpg" alt="">
+    <img src="https://cdn.pixabay.com/photo/2016/03/15/04/11/towards-the-garden-1256872__340.jpg" width="600px" height="300px" alt="한국">
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h2>리스트</h2>
+    <h3>순서 없는 리스트</h3>
+    <!-- 순서가 없는 리스트 : ul(unrdered list) -->
+    <ul>
+        <li>오감자</li>
+        <li>에이스</li>
+        <li>코카콜라</li>
+    </ul>
+    <h3>순서 있는 리스트</h3>
+    <!-- 순서가 있는 리스트 : ol(oredered list) -->
+    <ol>
+        <li>충무로 역에 도착</li>
+        <li>건물을 찾아서 들어온다</li>
+        <li>엘리베이터를 탄다</li>
+    </ol>
+    <h3>정의 리스트</h3>
+    <dl>
+        <dt>SIAT</dt>
+        <dd>Smart IT Advance Training</dd>
+<p>
+        <dt><b>HTML</b></dt>
+        <dd>웹 페이지에 대한 구조를 만든다</dd>
+    </p>
+    </dl>
+    <hr>
+    <h2>테이블</h2>
+    <table>
+        <caption>표 제목</caption>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>관심사</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>주상현</td>
+                <td>자동차</td>
+            </tr>
+            <tr>
+                <td>송하나</td>
+                <td>도서</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table border="1">
+        <caption>2020 1학기 점수</caption>
+        <thead>
+            <tr>
+                <!-- 이름,학년,국어,수학 -->
+                <th>이름</th>
+                <th>학년</th>
+                <th>국어</th>
+                <th>수학</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 김민수, 3학년, 100, 50 -->
+            <!-- 박철수, 2학년, 50, 100 -->
+            <!-- 최영수, 1학년, 50, 0 -->
+            <tr>
+                <td>김민수</td>
+                <td>3학년</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>박철수</td>
+                <td>2학년</td>
+                <td>50</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>최영수</td>
+                <td>1학년</td>
+                <td>50</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- 행 : row (가로 한 줄) 
+                     열 : column (세로 한 줄) -->
+                <th colspan="2">총합</th>
+                <th>200</th>
+                <th>150</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
