@@ -7,24 +7,33 @@
     <title>CSS 폰트와 텍스트</title>
     <style>
         p {
+            color: green;
+            font-size: 25px;
             /* font-family */
+            font-family: "궁서";
+            /* 웹 브라우저 기본 글씨체는 맑은 고딕 그외에도 굴림, 궁서, 바탕 등을 설정 가능 */
+            line-height: 2;
         }
         #fontSize {
-
+            font-size: 50px;
         }
         #fontStyle {
-
+            font-style: italic;
         }
         #fontWeight {
-
+            font-weight: bold;
         }
         #fontShortHand {
-
+            /* font: font-style  font-weight font-size/line-height font-family */
+            font: italic bold 20px/150% "맑은 고딕"
         }
         .textTest {
-
+            text-align: center;
             /* em, i */
-
+            /* text-decoration: underline; */
+            /* text-decoration: overline; */
+            /* text-decoration: line-through; */
+            text-decoration: none;
         }
     </style>
 </head>
