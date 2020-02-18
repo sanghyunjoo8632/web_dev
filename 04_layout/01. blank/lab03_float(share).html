@@ -5,7 +5,7 @@
   <style>
     /* float image */
     img {
-      float: right;
+      float: left;
       margin-right: 10px;
       width: 240px;
     }
@@ -24,11 +24,11 @@
     }
 
     .fleft {
-      float: left;
+
     }
 
     .fright {
-      float: right;
+
     }
 
     .red {
@@ -45,18 +45,18 @@
       background-color: #FF8C00;
       width: 150px;
       height: 50px;
-      float: left;
+
     }
 
     .right {
       background-color: #9932CC;
       width: 150px;
       height: 50px;
-      float:right;
+
     }
 
     p.clear {
-      clear: both;
+
     }
 
     /* over-flow clear-fix
@@ -70,15 +70,15 @@
     img.left {
       width: 245px;
       height: 185px;
-
+      float: left;
     }
 
     #second {
-
+      clear: left;
     }
 
     .good {
-
+      overflow: auto;
     }
 
     /* overflow 속성 */
@@ -91,23 +91,24 @@
       border-radius: 6px;
       border-color: gray;
       border-style: dotted;
+      float: left;
 
     }
 
     .visible {
-
+      overflow: visible;
     }
 
     .hidden {
-
+      overflow: hidden;
     }
 
     .scroll {
-
+      overflow: scroll;
     }
 
     .auto {
-
+      overflow: auto;
     }
 
     /* float 속성을 통한 레이아웃 */
@@ -127,7 +128,7 @@
     nav {
       border: 3px solid #FF1493;
       width: 150px;
-
+      float: left;
     }
 
     section {

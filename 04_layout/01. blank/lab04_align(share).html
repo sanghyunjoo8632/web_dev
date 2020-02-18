@@ -16,12 +16,12 @@
         div.table {
             height: 100px;
             background-color: lavender;
-
+            display: table;
             margin: auto;
         }
 
         div.table>div {
-
+            display: table-cell;
             vertical-align: middle;
         }
 
@@ -30,11 +30,17 @@
             height: 200px;
             position: relative;
             border: 3px solid green;
+
         }
 
         .center div {
             background-color: aqua;
             margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* overflow: hidden; */
             /* 
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -46,12 +52,14 @@
 <body>
     <h1>정렬 (Align)</h1>
     <h2>수직 정렬</h2>
-    <div class="line">
+    <div class="line" style="overflow: auto;">
         line-height를 사용해서 수직 정렬
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam cupiditate magnam cum commodi quas quasi, nulla nesciunt, perferendis perspiciatis vero recusandae ipsa nisi omnis rerum illo ab atque nihil cumque!
     </div>
-    <div class="table">
+    <div class="table" style="width:  200px; height: 200;overflow: hidden;">
         <div>
             table 속성을 사용해 수직 정렬
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora rem quo ipsam ipsum omnis animi dolore suscipit aperiam fuga, sequi, debitis modi vel dicta! Voluptatum ipsum eaque nesciunt esse qui?
         </div>
     </div>
     <br>
