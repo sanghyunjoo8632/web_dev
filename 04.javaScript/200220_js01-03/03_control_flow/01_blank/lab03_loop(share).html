@@ -12,9 +12,28 @@
     <script>
         // 특정 조건이 참인 경우에만 계속 반복하는 while
         // while (표현식) {표현식이 참인 동안 반복적으로 실행하고자 하는 실행문}
-        
+        let w = 0;
+        while (w < 10) {
+            w++;
+            document.write("w는 " + w + "<br>")
+        }        
         
         // 탈출할 길이 없어서 무한 루프에 빠짐
+       /*  let w2 = 0;
+        while (w2 == 0) {
+            console.log(w2);
+        } */
+
+
+        let w3 = 0;
+        while (true) {
+            if (w3 >= 10) {
+                console.log('break');
+                break;
+            }
+            w3++;
+            document.write("w는 " + w + "<br>")
+        }
         
     </script>
     <h2>for</h2>
